@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 
+    url: jdbc:mysql://127.0.0.1:3306/wx_restaurant?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+   
+   
+server:
+  servlet:
+    context-path: /restaurant
+    
+    
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#  level:
+#    root: INFO
+#    '[com.imooc.restaurant]': DEBUG
+#  file:
+#    name: restaurant_spring_log
+#    path: /Users/jiaronghe/Desktop/STS4/restaurant
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
